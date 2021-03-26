@@ -11,7 +11,7 @@ const App = new Vue (
         "Connettersi alla classe Boolean alle 9:30",
         "Pausella caffè 11:10",
         "Pranzo 13:15",
-        "Esercizio sulla To Do list con Vue --> Right Now!" 
+        "Esercizio sulla To Do list con Vue --> Right Now!"
       ],
 
 
@@ -19,6 +19,10 @@ const App = new Vue (
     },
 
     methods: {
+
+      deleteIt: function (i) {
+        this.list.splice(i, 1);
+      }
 
     },
 

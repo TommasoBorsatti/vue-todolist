@@ -23,8 +23,8 @@
     <main>
       <div class="container">
         <div class="list-container">
-          <ol>
-            <li v-for= "item in list">{{item}}<span><i class="far fa-times-circle"></i></span></li>
+          <ol v-if= "list.length > 0">
+            <li v-for= "(item, index) in list">{{item}}<span><i @click= "deleteIt(index)" class="far fa-times-circle"></i></span></li>
           </ol>
         </div>
       </div>
