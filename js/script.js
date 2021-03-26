@@ -24,6 +24,7 @@ const App = new Vue (
       //Funzione che cancella al click sulla x:
       deleteIt: function (i) {
         this.list.splice(i, 1);
+        this.newClass = ""
       },
 
       //Funzione che aggiunge al click sul button E al KeyUp su Enter:
