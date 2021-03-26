@@ -6,19 +6,25 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
+  background-color: lightblue;
 }
 
 header{
   text-align: center;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 40px;
+}
+
+main{
+  padding-bottom: 55px;
 }
 
 .container {
-  width: 50%;
+  width: 55%;
   margin: auto;
   padding: 15px 0;
   background-color: coral;
+  margin-bottom: 50px;
+
 }
 
 .list-container{
@@ -26,8 +32,23 @@ header{
   margin: auto;
 }
 
+.input-container{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* ELEMENTS */
+
 li{
   padding: 10px 0;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5)
+
 }
 
 i{
@@ -36,4 +57,39 @@ i{
   color: red;
   text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
   cursor: pointer;
+}
+
+input{
+  padding: 3px 5px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  margin-bottom: 25px
+}
+
+input:focus{
+  outline-color: coral;
+}
+
+button{
+  background-color: coral;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+button:focus{
+  outline: none;
+
+}
+
+/* TYPO */
+
+h1{
+  color: coral;
+  text-shadow: 2px 2px 3px rgba(40, 0, 0, 0.5);
+  font-size: 45px
 }
