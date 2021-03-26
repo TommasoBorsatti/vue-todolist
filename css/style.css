@@ -115,10 +115,6 @@ h1{
   }
 }
 
-ol li:nth-child(5){
-  animation: slideright 0.4s linear;
-}
-
-.animated{
+.animated:last-of-type{
   animation: slideright 0.4s linear;
 }
