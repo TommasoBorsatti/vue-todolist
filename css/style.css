@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  padding: 15px 0;
+  background-color: coral;
+}
+
+.list-container{
+  width: 55%;
+  margin: auto;
+}
+
+li{
+  padding: 10px 0;
+}
+
+i{
+  padding: 0 10px;
+  font-weight: bold;
+  color: red;
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+}
