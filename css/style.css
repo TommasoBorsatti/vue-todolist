@@ -18,10 +18,10 @@ main{
   padding-bottom: 55px;
   background-position-y: 30%;
   background-image: url(https://www.pngkey.com/png/full/804-8040843_notebook-book-knowledge-pen-png-and-vector-image.png);
-  background-size: contain;
+  background-size: 900px;
   background-repeat: no-repeat;
   background-position: right;
-  background-position-y: bottom;
+  background-position-y: 10vh;
 }
 
 .container {
@@ -30,6 +30,7 @@ main{
   padding: 15px 0;
   background-color: rgba(93, 16, 18, 0.4);
   margin-bottom: 50px;
+  min-height: 60vh;
 }
 
 .list-container{
