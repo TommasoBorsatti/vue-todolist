@@ -25,14 +25,13 @@ const App = new Vue (
         this.list.splice(i, 1);
       },
 
-      //Funzione che aggiunge al click sul button:
-      addClick: function() {
-
+      //Funzione che aggiunge al click sul button E al KeyUp su Enter:
+      addIt: function() {
         if (this.newItem != "") {
           this.list.push(this.newItem);
           this.newItem = "";
         }
-      }
+      },
 
     },
 

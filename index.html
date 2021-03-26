@@ -29,8 +29,8 @@
         </div>
       </div>
       <div class="input-container">
-        <input v-model="newItem" type="text" placeholder="Inserisci una nuova voce alla lista" >
-        <button @click= "addClick">AGGIUNGI</button>
+        <input @keyup.enter="addIt" v-model="newItem" type="text" placeholder="Inserisci una nuova voce alla lista" >
+        <button @click= "addIt">AGGIUNGI</button>
       </div>
     </main>
 
