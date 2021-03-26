@@ -15,6 +15,7 @@ const App = new Vue (
       ],
 
       newItem: "",
+      newClass: "",
 
     },
 
@@ -28,6 +29,7 @@ const App = new Vue (
       //Funzione che aggiunge al click sul button E al KeyUp su Enter:
       addIt: function() {
         if (this.newItem != "") {
+          this.newClass = "animated"
           this.list.push(this.newItem);
           this.newItem = "";
         }
