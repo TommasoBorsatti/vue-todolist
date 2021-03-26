@@ -6,7 +6,7 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
-  background-color: lightblue;
+  background-color: #A9171E;
 }
 
 header{
@@ -16,15 +16,20 @@ header{
 
 main{
   padding-bottom: 55px;
+  background-position-y: 30%;
+  background-image: url(https://www.pngkey.com/png/full/804-8040843_notebook-book-knowledge-pen-png-and-vector-image.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: bottom;
 }
 
 .container {
   width: 55%;
   margin: auto;
   padding: 15px 0;
-  background-color: coral;
+  background-color: #5D1012;
   margin-bottom: 50px;
-
 }
 
 .list-container{
@@ -38,17 +43,21 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
+
 /* ELEMENTS */
+
+ol{
+  position: relative
+}
 
 li{
   padding: 10px 0;
   font-size: 20px;
   color: white;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5)
-
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  animation: slideright 0.3s linear;
 }
 
 i{
@@ -67,12 +76,12 @@ input{
 }
 
 input:focus{
-  outline-color: coral;
+  outline-color: #DC3C4D;
 }
 
 button{
-  background-color: coral;
-  color: white;
+  background-color: #B69D8D;
+  color: #000;
   font-size: 16px;
   padding: 8px 12px;
   border: none;
@@ -83,13 +92,26 @@ button{
 
 button:focus{
   outline: none;
-
 }
 
 /* TYPO */
 
 h1{
-  color: coral;
+  color: #DC3C4D;
   text-shadow: 2px 2px 3px rgba(40, 0, 0, 0.5);
   font-size: 45px
+}
+
+/* EFFECTS */
+
+@keyframes slideright {
+  0% {
+    position:absolute;
+    left: -10%;
+  }
+
+  100% {
+    position: absolute;
+    left: 0;
+  }
 }
